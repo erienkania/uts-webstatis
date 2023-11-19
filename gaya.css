@@ -1,0 +1,407 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgba(248, 247, 246, 0.664);
+    justify-content: center;
+    text-decoration:none;
+}
+ /*MEMULAI NAVBAR*/
+.navbar {
+    
+    padding: 20px;
+    background-color:rgba(230, 149, 28, 0.664);
+}
+ nav .navbar {
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+nav .logo {
+  float: left;
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 1000;
+  text-decoration: none;
+  
+  
+}
+nav .logo p {
+color: white;
+text-decoration: none;
+padding: 0px 20px;
+}
+
+
+.menu a{
+  color: white;
+  font-weight: 50px;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.menu a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
+}
+
+nav .menu a:hover {
+  text-decoration: none;
+  background-color: #e61c1c;
+}
+
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.tombol {
+  background-color: #e6951c;
+  height: 40px;
+  line-height: 42px;
+  color: rgb(177, 177, 185);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;}
+
+/* pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+.header-background {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: justify;
+
+}
+header .intro {
+  z-index: 100;
+  color: rgb(161, 161, 245);
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+
+
+
+#tentang,
+#mendaftar,
+#gambar {
+text-align: center;
+}
+
+/*SECTION DIMULAI*/
+section {
+  padding: 50px 0px 50px 0px;
+}
+
+section h3 {
+  font-size: 30px;
+}
+section .foto {
+  width: 50%;
+}
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #e6951c;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+section .layarsatu{
+  padding-top: 5px;
+}
+section .layarisi p {
+  font-style: normal;
+  text-align: justify;
+}
+
+
+.tombol-menu .garis {
+  background-color: #333;
+}
+section .gambar {
+  background-color: rgba(230, 149, 28, 0.664);
+}
+
+section#gambar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 5px 0px 5px 0px;
+
+}
+
+section#gambar div {
+  padding: 5px;
+}
+
+section#gambar div img {
+  height: 200px;
+  border-radius: 10px;
+  width: 250px;
+}
+section#gambar div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+} 
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color:#fff;
+  padding: 30px;
+  border-radius: 20px ;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="usia"],
+input[type="HP"],
+input[type="alamat"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+input[type="submit"] {
+  background-color: #e61c1c;
+  color:white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.read-more-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/*MEMULAI ISI KONTEN*/
+
+  .layarsatu {
+    width: 1000px;
+    margin: auto;
+    color: black;
+    text-align: center;
+    height: 50px;
+  }
+  .layarisi {
+    width: 100%;
+    color: black;
+    height: 50px;
+    
+  }
+.layarisi p{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+  .layar-gambar {
+    width: 1000px;
+    margin: auto;
+    color: black;
+    text-align: center;
+  }
+
+
+  .layarawal {
+    width: 100%;
+    position: relative;
+  }
+  img {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    justify-content: center;
+  
+  }
+  .intro {
+    width: 100%;
+    height: 50%;
+    top: 60px;
+    left: 0;
+    position:absolute;
+    background: rgba(0, 0, 0, 0, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.6s;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .intro:hover {
+    opacity: 1;
+  }
+  .intro h2 {
+    font-size: 55px;
+    color: rgba(230, 149, 28, 0.664);
+    margin-bottom: 15px;
+  }
+   
+/* MEMULAI FOOTHER */
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer .layarakhir {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  footer .layarakhir div {
+    width: 20%;
+
+  }
+footer .layarakhir h3 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+  footer .layarakhir .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+  }
+  
+input[type="teks"],
+input[type="saran"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.layarakhir-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #141313;
+}
+
+input, textarea {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+padding: 10px 15px;
+border: none;
+cursor: pointer;
+}
+/*footer selesai*/
+
+  @media screen and (max-width: 991.98px) {
+    .navbar {
+      width: 90%;
+    }
+    .menu {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .tombol-menu {
+        display: flex;
+      }
+
+    .menu a {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #e6951c;
+      line-height: 40px;
+    }
